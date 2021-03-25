@@ -6,11 +6,9 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
-import org.adako.todo.data.model.ToDoEntity
-import org.adako.todo.data.repositories.ToDoRepository
-import timber.log.Timber
+import org.adako.todo.domain.entity.ToDoEntity
+import org.adako.todo.domain.repository.ToDoRepository
 import javax.inject.Inject
-import kotlin.random.Random
 
 @HiltViewModel
 class MainActivityVM @Inject constructor(
@@ -21,14 +19,13 @@ class MainActivityVM @Inject constructor(
     val allTodoList: StateFlow<List<ToDoEntity>>
         get() = _allTodoList.asStateFlow()
 
-    private val _changeStatus = MutableSharedFlow<Int>()
-    val changeStatus: SharedFlow<Int>
+    private val _changeStatus = MutableSharedFlow<Long>()
+    val changeStatus: SharedFlow<Long>
         get() = _changeStatus
 
-    private val _removeTodo = MutableSharedFlow<Int>()
-    val removeTodo: SharedFlow<Int>
+    private val _removeTodo = MutableSharedFlow<Long>()
+    val removeTodo: SharedFlow<Long>
         get() = _removeTodo
-
 
     fun getAllToDos() {
         viewModelScope.launch(Dispatchers.IO) {

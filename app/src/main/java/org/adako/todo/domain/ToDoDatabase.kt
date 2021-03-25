@@ -1,10 +1,9 @@
-package org.adako.todo.data
+package org.adako.todo.domain
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import androidx.room.TypeConverters
-import org.adako.todo.data.model.ToDoEntity
-import org.adako.todo.data.dao.ToDoDao
+import org.adako.todo.domain.entity.ToDoEntity
+import org.adako.todo.domain.dao.ToDoDao
 
 @Database(entities = [ToDoEntity::class], version = 1)
 abstract class ToDoDatabase: RoomDatabase() {

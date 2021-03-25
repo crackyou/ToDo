@@ -7,8 +7,8 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
-import org.adako.todo.data.model.ToDoEntity
-import org.adako.todo.data.repositories.ToDoRepository
+import org.adako.todo.domain.entity.ToDoEntity
+import org.adako.todo.domain.repository.ToDoRepository
 import javax.inject.Inject
 
 @HiltViewModel

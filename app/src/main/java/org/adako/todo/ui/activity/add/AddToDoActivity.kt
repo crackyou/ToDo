@@ -6,7 +6,7 @@ import androidx.lifecycle.lifecycleScope
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
-import org.adako.todo.data.model.ToDoEntity
+import org.adako.todo.domain.entity.ToDoEntity
 import org.adako.todo.databinding.ActivityAddBinding
 import org.adako.todo.ui.base.BaseActivity
 import timber.log.Timber

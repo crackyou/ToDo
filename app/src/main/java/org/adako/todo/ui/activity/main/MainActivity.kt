@@ -2,14 +2,12 @@ package org.adako.todo.ui.activity.main
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
-import kotlinx.coroutines.launch
-import org.adako.todo.data.model.ToDoEntity
+import org.adako.todo.domain.entity.ToDoEntity
 import org.adako.todo.databinding.ActivityMainBinding
 import org.adako.todo.ui.activity.add.AddToDoActivity
 import org.adako.todo.ui.activity.detail.DetailActivity

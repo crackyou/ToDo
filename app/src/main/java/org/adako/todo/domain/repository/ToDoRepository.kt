@@ -1,7 +1,7 @@
-package org.adako.todo.data.repositories
+package org.adako.todo.domain.repository
 
-import org.adako.todo.data.model.ToDoEntity
-import org.adako.todo.data.dao.ToDoDao
+import org.adako.todo.domain.entity.ToDoEntity
+import org.adako.todo.domain.dao.ToDoDao
 import javax.inject.Inject
 
 class ToDoRepository @Inject constructor(

@@ -1,10 +1,8 @@
-package org.adako.todo.data.model
+package org.adako.todo.domain.entity
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import java.io.FileDescriptor
-import java.util.*
 
 @Entity(tableName = "ToDo")
 data class ToDoEntity(
